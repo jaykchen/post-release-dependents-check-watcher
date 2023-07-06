@@ -1,0 +1,20 @@
+[package]
+name = "post-release-dependents-check"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.71"
+chrono = "0.4.26"
+flowsnet-platform-sdk = "0.1.4"
+github-flows = "0.5.1"
+schedule-flows = "0.2.0"
+serde = "1.0.166"
+serde_json = "1.0.93"
+slack-flows = "0.3.1"
+store-flows = "0.3.1"
+tokio_wasi = { version = "1.25.1", features = ["full"] }
